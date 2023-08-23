@@ -1,3 +1,5 @@
+### If you're not on <https://gitlab.com/HKX2/HKX2Library>, then you're on a mirror.
+
 # HKX2Library
 
 A standalone customized version of Katalash's HKX2 library for Havok packfile deserialization and serialization used in DSMapStudio.
