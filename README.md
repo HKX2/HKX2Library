@@ -1,18 +1,22 @@
-### If you're not on <https://gitlab.com/HKX2/HKX2Library>, then you're on a mirror.
+### If you're not on <https://git.kroner.dev/HKX2/hkx2library>, then you're on a mirror.
 
 # HKX2Library
 
-A standalone customized version of Katalash's HKX2 library for Havok packfile deserialization and serialization used in DSMapStudio.
+A standalone customized version of Katalash's HKX2 library for Havok packfile
+deserialization and serialization used in DSMapStudio.
 
 ### Differences
 
-- Supports Breath of the Wild packfiles used on Wii U and Switch (might support other games that use the same classes).
+- Supports Breath of the Wild packfiles used on Wii U and Switch (might support
+  other games that use the same classes).
 - Supports conversion of packfiles between those two platforms.
-- Padding improvements which allow for perfectly matching Navmesh (.hknm2) files.
+- Padding improvements which allow for perfectly matching Navmesh (.hknm2)
+  files.
 
 ### Known issues
 
-- Ragdoll files (.hkrg) differ from vanilla files because of different fixup ordering. This issue shouldn't affect functionality.
+- Ragdoll files (.hkrg) differ from vanilla files because of different fixup
+  ordering. This issue shouldn't affect functionality.
 
 ### Usage
 
@@ -62,11 +66,18 @@ namespace PlatformConverter
 
 ### Technical details
 
-- `./HKX2/Autogen/` contains Havok classes generated from Breath of the Wild [reflection information dump](https://raw.githubusercontent.com/zephenryus/havok-reflection/master/reflection_data.json).
-- `./HKX2/Manual/` also contains generated classes, but edited to the best of my patience and capabilities to match both Wii U and Switch files.
-- Differences in class structure between games and platforms is dependent on Havok version used and platform's header information (pointer size, endian, padding option).
+- `./HKX2/Autogen/` contains Havok classes generated from Breath of the Wild
+  [reflection information dump](https://raw.githubusercontent.com/zephenryus/havok-reflection/master/reflection_data.json).
+- `./HKX2/Manual/` also contains generated classes, but edited to the best of my
+  patience and capabilities to match both Wii U and Switch files.
+- Differences in class structure between games and platforms is dependent on
+  Havok version used and platform's header information (pointer size, endian,
+  padding option).
 
 ### Credits
 
-- [katalash](https://github.com/katalash) - The original HKX2 library included in [DSMapStudio](https://github.com/katalash/DSMapStudio)
-- [JKAnderson](https://github.com/JKAnderson) - BinaryReaderEx and BinaryWriterEx included in [SoulsFormats](https://github.com/JKAnderson/SoulsFormats)
+- [katalash](https://github.com/katalash) - The original HKX2 library included
+  in [DSMapStudio](https://github.com/katalash/DSMapStudio)
+- [JKAnderson](https://github.com/JKAnderson) - BinaryReaderEx and
+  BinaryWriterEx included in
+  [SoulsFormats](https://github.com/JKAnderson/SoulsFormats)
