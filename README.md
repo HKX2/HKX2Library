@@ -24,7 +24,7 @@ deserialization and serialization used in DSMapStudio.
 
 Then reference it in your solution and project.
 
-```C#
+```cs
 using HKX2;
 
 namespace PlatformConverter
